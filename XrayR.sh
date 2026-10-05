@@ -7,7 +7,8 @@ plain='\033[0m'
 
 version="v1.0.0"
 github_repo="jameqq/XrayRP"
-raw_base="https://raw.githubusercontent.com/${github_repo}/master"
+script_repo="jameqq/XrayR-release1"
+raw_base="https://raw.githubusercontent.com/${script_repo}/master"
 
 # check root
 [[ $EUID -ne 0 ]] && echo -e "${red}错误: ${plain} 必须使用root用户运行此脚本！\n" && exit 1
@@ -389,7 +390,7 @@ show_usage() {
 show_menu() {
     echo -e "
   ${green}XrayR 后端管理脚本，${plain}${red}不适用于docker${plain}
---- https://github.com/${github_repo} ---
+--- https://github.com/${github_repo}/releases ---
   ${green}0.${plain} 修改配置
 ————————————————
   ${green}1.${plain} 安装 XrayR
